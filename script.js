@@ -9,7 +9,7 @@ var listLength = list.length
 	
 	for (var i = 0; i < list.length; i++) {
 	var deleteButton = document.createElement('button');
-	deleteButton.appendChild(document.createTextNode('delete'));
+	deleteButton.appendChild(document.createTextNode('done!'));
 	list[i].appendChild(deleteButton);
 	deleteButton.classList.add('delete');  
 
@@ -44,7 +44,7 @@ function createListElement() {
 	
 	// add delete buttons to new li
 	var deleteButton = document.createElement('button');
-		deleteButton.appendChild(document.createTextNode('delete'));
+		deleteButton.appendChild(document.createTextNode('done!'));
 		li.appendChild(deleteButton);
 		ul.appendChild(li);
 		deleteButton.classList.add('delete');

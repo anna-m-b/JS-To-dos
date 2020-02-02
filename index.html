@@ -1,22 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Javascript + DOM</title>
+
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/6cdb981465.js" crossorigin="anonymous"></script>
+	
+	<title>Javascript + DOM</title>
+	
 </head>
 <body>
-	<h1>Shopping List</h1>
-	<p id="first">Get it done today</p>
-	<input id="userinput" type="text" placeholder="enter items">
-	<button id="enter">Enter</button>
-	<ul id="shopping">
-		<li class="impt">Notebook</li>
-		<li class="impt">Jello</li>
-		<li class="impt">Spinach</li>
-		<li class="impt">Rice</li>
-		<li class="impt">Birthday Cake</li>
-		<li class="impt">Candles</li>
-	</ul>
+
+	<div class="container">
+		<div class="header">
+			<h1>To Do</h1>
+		
+		</div>
+
+		<div class="cover">
+
+			<p>"The secret of getting ahead is getting started"</p>
+		
+		</div>
+
+		<div class="input">
+		<!-- 	<div class='box'> -->
+		<div class="box-button">
+				<input id="userinput" type="text" placeholder="what are you going to get done?"> 
+		
+		
+				<button id="enter">add item</button>
+		
+			</div>
+		</div>
+<!-- 
+<i class="fas fa-plus"></i> -->
+
+		<div class="grid-wrapper">
+		
+			<div class="list">
+				<ul id="shopping">
+					<li class="impt">meditate 10 minutes a day</li>
+					<li class="impt">cycle or run every day</li>
+					<li class="impt">read something fascinating every week</li>
+					
+				</ul>
+			</div>
+		
+		</div>
+	</div>
+	
 	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
