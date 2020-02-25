@@ -1,24 +1,5 @@
-/*.coolTitle {
-  text-align: center;
-  font-family: 'Oswald', Helvetica, sans-serif;
-  font-size: 40px;
-  transform: skewY(-10deg);
-  letter-spacing: 4px;
-  word-spacing: -8px;
-  color: tomato;
-  text-shadow: 
-    -1px -1px 0 firebrick,
-    -2px -2px 0 firebrick,
-    -3px -3px 0 firebrick,
-    -4px -4px 0 firebrick,
-    -5px -5px 0 firebrick,
-    -6px -6px 0 firebrick,
-    -7px -7px 0 firebrick,
-    -8px -8px 0 firebrick,
-    -30px 20px 40px dimgrey;
-}*/
-
-html, body {
+html,
+body {
     height: 100%;
     margin: 0 auto;
     padding: 0;
@@ -26,146 +7,155 @@ html, body {
 }
 
 .container {
-  height: 100%;
-  width: auto;
+    display: flex;
+    flex-direction: column;
+}
 
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
+.banner {
+    height: 25%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
 }
 
 .header {
-  display: flex;
-  justify-content: center;
-  
+    display: flex;
+    justify-content: center;
 }
 
 h1 {
-  font-family: 'Bebas Neue', cursive;
-  font-size: 3.5em;
-  letter-spacing: .8em;
-  color: #FFFFFF;
-  padding: 0;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3.5em;
+    letter-spacing: .8em;
+    color: #FFFFFF;
+    padding: 0;
+    text-shadow: 1px 1px 2px #148e89;
 }
 
 .cover {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 0px;
-  padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: auto;
+    padding: auto;
 }
 
-/*img {
-  max-width: 100%;
-  height: auto;
-}*/
+h2 {
+    font-family: 'Bebas Neue', cursive;
+    color: #148e89;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: .2em;
+    grid-column: 2/3;
+    text-shadow: 0.5px 1px 0.5px #ffffff;
+}
 
-
-p {
-  font-family: 'Bebas Neue', cursive;
-  color: #148e89;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 2em;
-  letter-spacing: .2em;
-  grid-column: 2/3;
+.title {
+    margin: none;
+    padding: none;
+    justify-self: center;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.8em;
+    letter-spacing: .2em;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #148e89;
 
 }
+
+.todo-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% fit-content auto;
+    justify-self: center;
+}
+
+.monday {
+    justify-self: center;
+}
+
 
 
 .input {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-
-  margin: 0px 0px 20px 0px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
 }
 
-.box-button {
-  grid-column: 2/3;
-  justify-self: center;
-  align-self: center;
+.list-wrap {
+    justify-self: center;
 }
 
 
-
-#userinput {
-
-  height: 2.5em;
-  width: 20em;
-  border: 2px solid #148e89;
-  color: #148e89;
-  text-align: center;
-  border-radius: 8px;
-
-}
+/* .box-button {
+    grid-column: 2/3;
+    justify-self: center;
+    align-self: center;
+} */
 
 
+.userinput {
+    height: 2em;
+    width: 20em;
+    border: 1px solid #52dfff;
+    color: #148e89;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 10px;
+} 
 
-#enter {
-
-  height: 1.5em;
-  background: transparent;
-  border: 2px solid;
-  border-radius: 20px;
-  border-color: white;
-  color: #148e89;
-  font-size: 1.2em;
-  font-family: 'Zhi Mang Xing', cursive;
-  margin-bottom: -5px;  
-  margin-left: 10px;
-}
-
-
-
-.grid-wrapper{ 
-
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
+.enter, .clear {
+    height: 1.5em;
+    background: #ffffff;
+    border: 2px solid;
+    border-radius: 20px;
+    border-color: white;
+    color: #148e89;
+    font-size: 1.2em;
+    font-family: 'Zhi Mang Xing', cursive;
+    margin-bottom: 5px;
+    margin-left: 10px;
 
 }
-
 
 .delete {
-  background: transparent;
-  border: 2px solid;
-  border-color: white;
-  border-radius: 20px;
-  color: #148e89;
-  font-size: 0.8em;
-  font-family: 'Zhi Mang Xing', cursive;
-  margin: 10px;
-  font-weight: 100;
-  letter-spacing: 0.1em;
+    background: transparent;
+    border: 2px solid;
+    border-color: white;
+    border-radius: 20px;
+    color: #148e89;
+    font-size: 0.8em;
+    font-family: 'Zhi Mang Xing', cursive;
+    margin: 10px;
+    font-weight: 100;
+    letter-spacing: 0.1em;
 }
-
 
 .done {
-  text-decoration: line-through;
+    text-decoration: line-through;
 }
 
-ul {
-/*
+.list {
+    /*
   list-style: none;*/
-  font-family: 'Zhi Mang Xing', cursive;
-  font-size: 1.5em;
-  letter-spacing: .05em;
-  font-weight: 200;
-  color: #148e89;
+    font-family: 'Zhi Mang Xing', cursive;
+    font-size: 1.5em;
+    letter-spacing: .05em;
+    font-weight: 200;
+    color: #148e89;
+    text-align: center;
 }
 
 #enter:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .delete:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
-.impt:hover {
-  cursor: pointer;
+.l-item:hover {
+    cursor: pointer;
 }
-
-
-
